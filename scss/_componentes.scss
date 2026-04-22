@@ -1,0 +1,36 @@
+@use 'variaveis';
+@use 'mixins';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 10%;
+  background: variaveis.$cor-escura;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav__link {
+  color: #ccc;
+  text-decoration: none;
+  @include mixins.transicao;
+  &:hover, &--active { color: variaveis.$cor-primaria; }
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  @include mixins.transicao;
+  &:hover { transform: translateY(-5px); }
+}

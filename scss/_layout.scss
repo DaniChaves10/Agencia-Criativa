@@ -1,0 +1,26 @@
+@use 'variaveis';
+@use 'mixins';
+
+.section {
+  padding: variaveis.$espacamento 10%;
+
+  &--gray { background-color: variaveis.$cor-cinza; }
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.hero {
+  height: 70vh;
+  background: linear-gradient(135deg, variaveis.$cor-primaria, variaveis.$cor-secundaria);
+  color: white;
+  @include mixins.flex-center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+
+  &__title { font-size: 3rem; }
+}

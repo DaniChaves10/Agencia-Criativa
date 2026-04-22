@@ -1,0 +1,10 @@
+@use 'base';
+@use 'layout';
+@use 'componentes';
+
+.footer {
+  background: #111;
+  color: #777;
+  text-align: center;
+  padding: 2rem;
+}

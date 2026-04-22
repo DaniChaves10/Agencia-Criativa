@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.section {
+  padding: 5rem 10%;
+}
+.section--gray {
+  background-color: #f9f9f9;
+}
+.section__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero {
+  height: 70vh;
+  background: linear-gradient(135deg, #6c63ff, #4facfe);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+.hero__title {
+  font-size: 3rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 10%;
+  background: #111;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav__link {
+  color: #ccc;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.nav__link:hover, .nav__link--active {
+  color: #6c63ff;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.footer {
+  background: #111;
+  color: #777;
+  text-align: center;
+  padding: 2rem;
+}
+
+/*# sourceMappingURL=estilos.css.map */

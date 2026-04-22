@@ -1,0 +1,11 @@
+@use "sass:math";
+
+$cor-primaria: #6c63ff;
+$cor-secundaria: #4facfe;
+$cor-hover: #574dfa;
+$cor-escura: #111;
+$cor-cinza: #f9f9f9;
+$cor-texto: #333;
+
+$espacamento: 5rem;
+$espacamento-metade: math.div($espacamento, 2);
